@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#020920"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/SideImage"
+        android:layout_width="118dp"
+        android:layout_height="800dp"
+        android:src="@drawable/fimage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="49dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="279dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginLeft="135dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Login to Foodmandu"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="135dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/etEmail"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginStart="-112dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="-93dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
