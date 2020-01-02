@@ -19,9 +19,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="279dp"
+        android:layout_width="350dp"
         android:layout_height="83dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="120dp"
         android:layout_marginLeft="135dp"
         android:fontFamily="sans-serif-black"
         android:text="Login to Foodmandu"
@@ -81,5 +81,27 @@
         android:text="Login"
         android:textColor="@color/colorAccent"
         />
+
+    <TextView
+        android:id="@+id/vtNotAccount"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginLeft="135dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Don't have an account ?"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:text="Click Here"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/vtNotAccount"
+        android:clickable="true"/>
 
 </RelativeLayout>
