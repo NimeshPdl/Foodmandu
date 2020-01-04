@@ -1,13 +1,13 @@
 package com.foodmandu.bll;
 
-import com.example.taskmanager.api.UsersAPI;
-import com.example.taskmanager.serverresponse.SignUpResponse;
-import com.example.taskmanager.url.Url;
+import com.foodmandu.api.UsersAPI;
+import com.foodmandu.serverresponse.SignUpResponse;
 
 import java.io.IOException;
 
 import retrofit2.Call;
 import retrofit2.Response;
+import com.foodmandu.url.Url;
 
 public class LoginBLL {
 
