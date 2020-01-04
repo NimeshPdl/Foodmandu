@@ -101,7 +101,6 @@
         android:text="Click Here"
         android:textSize="15sp"
         android:textColor="#FFFFFF"
-        android:layout_below="@+id/vtNotAccount"
-        android:clickable="true"/>
+        android:layout_below="@+id/vtNotAccount" />
 
 </RelativeLayout>
