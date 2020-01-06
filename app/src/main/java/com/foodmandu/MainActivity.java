@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnLogin;
     private EditText etEmail, etPassword;
-    private TextView click;
+    private Button click1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +28,29 @@ public class MainActivity extends AppCompatActivity {
 
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
-        click = findViewById(R.id.click);
+        click1 = findViewById(R.id.click);
         btnLogin = findViewById(R.id.btnLogin);
 
-        click.setOnClickListener(new View.OnClickListener() {
+        click1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "OK", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, SignupActivity.class);
                 startActivity(intent);
+                Toast.makeText(MainActivity.this, "no", Toast.LENGTH_SHORT).show();
+                finish();
             }
+
         });
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login(); }
+                login();
+            }
         });
     }
-
     private void login() {
         String username = etEmail.getText().toString();
         String password = etPassword.getText().toString();
