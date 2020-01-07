@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "OK", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, SignupActivity.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "no", Toast.LENGTH_SHORT).show();
-                finish();
             }
 
         });
