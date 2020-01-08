@@ -6,13 +6,27 @@ public class User {
     private String lastName;
     private String username;
     private String password;
+    private String conpassword;
     private String image;
 
-    public User(String firstName, String lastName, String username, String password, String image) {
+    public User(String conpassword) {
+        this.conpassword = conpassword;
+    }
+
+    public String getConpassword() {
+        return conpassword;
+    }
+
+    public void setConpassword(String conpassword) {
+        this.conpassword = conpassword;
+    }
+
+    public User(String firstName, String lastName, String username, String password, String conpassword, String image) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.password = password;
+        this.conpassword = conpassword;
         this.image = image;
     }
 

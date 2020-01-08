@@ -37,7 +37,7 @@ public class SignupActivity extends AppCompatActivity {
     ImageView ProfileImg;
     EditText etFirstname, etLastname, etUsername, etPasswords, etConPasswords;
     Button btnRegister;
-    String imagePath;
+    String imagePath="";
     private String imageName = "";
 
 
@@ -145,8 +145,9 @@ public class SignupActivity extends AppCompatActivity {
         String lname = etLastname.getText().toString();
         String username = etUsername.getText().toString();
         String password = etPasswords.getText().toString();
+        String conpassword = etConPasswords.getText().toString();
 
-        User users = new User(fname, lname, username, password, imageName);
+        User users = new User(fname, lname, username, password, conpassword, imageName);
 
         UsersAPI usersAPI = Url.getInstance().create(UsersAPI.class);
         Call<SignUpResponse> signUpCall = usersAPI.registerUser(users);
