@@ -6,10 +6,10 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
 
-public interface TaskAPI {
+public interface ImageAPI {
 
     @FormUrlEncoded
-    @POST("tasks")
-    Call<Void> addTask(@Header("Authorization") String token, @Field("name") String task);
+    @POST("image")
+    Call<Void> addTask(@Header("Authorization") String token, @Field("image") String image);
 
 }

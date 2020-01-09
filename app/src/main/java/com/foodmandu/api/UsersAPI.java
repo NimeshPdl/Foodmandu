@@ -31,4 +31,7 @@ public interface UsersAPI {
     @GET("users/me")
     Call<User> getUserDetails(@Header("Authorization") String token);
 
+    @POST("users/uploads")
+    Call<ImageResponse> uploadslider(@Part MultipartBody.Part img);
+
 }
